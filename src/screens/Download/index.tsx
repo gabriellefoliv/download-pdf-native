@@ -6,6 +6,7 @@ import * as FileSystem from 'expo-file-system'
 import * as Sharing from 'expo-sharing'
 
 import { useState } from "react";
+import { Techs } from "../../components/Techs";
 
 const PDF_URI = {
     SAMPLE: "https://www.thecampusqdl.com/uploads/files/pdf_sample_2.pdf",
@@ -78,6 +79,8 @@ export function Download() {
             {percentageProgress > 0 && (
                 <Text style={styles.progress}>{percentageProgress.toFixed(1)}%</Text>
             )}
+
+            <Techs/>
         </View>
     )
 }
